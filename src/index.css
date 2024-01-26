@@ -1,13 +1,159 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Luxurious Roman";
+  background-color: #292524;
+  color: #fafaf9;
+  padding: 48px 64px 0px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo img {
+  width: 150px;
+  margin-left: 10px;
+  border-radius: 50px;
+}
+
+.logo h1 {
+  font-size: 60px;
+  color: #ceb04d;
+  padding: 30px 0px 0px 40px;
+}
+
+.btn {
+  background-color: #9f0807;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 50px;
+  color: #ceb04d;
+  font-weight: bold;
+  font-family: "Luxurious Roman";
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(110%) rotate(-2deg);
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  margin-top: 40px;
+}
+
+.dynasties-list {
+  list-style: none;
+  margin-top: 20px;
+  width: 470px;
+}
+
+.dynasties-list li {
+  background-color: #9f0807;
+  color: #ceb04d;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 20px 32px 17px;
+  border-radius: 50px;
+}
+
+.emperors-list {
+  list-style: none;
+  margin-left: 40px;
+}
+
+.emperor {
+  background-color: #9f0807;
+  margin: 20px 0;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 20px;
+}
+
+.emperor-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emperor-title h2 {
+  font-size: 32px;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tags span {
+  background-color: #a48424;
+  padding: 15px;
+  border-radius: 100px;
+}
+
+.emperor-name {
+  display: flex;
+  font-size: 32px;
+  color: #ceb04d;
+}
+
+.emperor-name span {
+  margin-right: 10px;
+}
+
+.emperor-other-title {
+  font-size: 18px;
+  padding: 10px 0;
+  color: #a48424;
+}
+
+.reign {
+  margin-top: 20px;
+  background-color: #78716c;
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+
+.emperor-biography {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.form-add-emperor {
+  background-color: #78716c;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-add-emperor label {
+  font-size: 20px;
+  text-align: right;
+  margin: 10px 10px;
+}
+
+.form-add-emperor select,
+input,
+textarea {
+  background-color: #a39c9a;
+  font-family: inherit;
+  margin: 10px 10px;
+  font-size: 20px;
 }
